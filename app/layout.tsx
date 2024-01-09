@@ -6,6 +6,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Next.js on GitHub Pages',
   description: 'A Next.js web application on GitHub Pages',
+  other: {
+    "google-site-verification": "BKaRGcj6dvWbuNeWVZ5e885fwtXQvlG95Srx8O8Whjc"
+  }
 }
 
 export default function RootLayout({
