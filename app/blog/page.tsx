@@ -5,9 +5,6 @@ export default async function Home() {
   const allPostsData = await getData();
   return (
     <div>
-      {/* Keep the existing code here */}
-
-      {/* Add this <section> tag below the existing <section> tag */}
       <section>
         <h2>Blog</h2>
         <ul>
