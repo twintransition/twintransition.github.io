@@ -1,4 +1,5 @@
 import { getSortedPostsData } from '@/lib/posts';
+import React from 'react';
 
 export default async function Home() {
   const allPostsData = await getData();

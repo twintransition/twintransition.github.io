@@ -1,4 +1,5 @@
 import { getAllPostIds, getPostData } from "@/lib/posts"
+import React from "react";
 
 export async function generateStaticParams() {
     const allIds = getAllPostIds();
