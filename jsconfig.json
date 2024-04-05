@@ -1,6 +1,8 @@
 {
     "compilerOptions": {
-        "jsx": "react",
+        "module": "ES6", // Specify ES6 modules for import statements
+        "jsx": "preserve", // Preserve JSX syntax
+        "checkJs": true,
         "baseUrl": ".",
         "paths": {
             "@/lib/*": [

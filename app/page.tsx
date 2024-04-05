@@ -1,17 +1,38 @@
-import Link from 'next/link'
-import Image from 'next/image';
-import React from 'react';
+import {
+  Tabs,
+  Tab,
+  Listbox,
+  ListboxItem,
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  Button,
+  Link,
+} from "@nextui-org/react";
 
 export default function Home() {
   return (
-    <div>
-      Hello King. <Link href="/about">About</Link>
-      <Image
-        src="/images/profile.jpg" // Route of the image file
-        height={144} // Desired size with correct aspect ratio
-        width={144} // Desired size with correct aspect ratio
-        alt="Your Name"
-      />
-    </div>
-  )
+    <>
+      <Tabs aria-label="Navigation">
+        <Tab key="home" href="/home">Home</Tab>
+        <Tab key="about" href="/about">About</Tab>
+      </Tabs>
+      <Listbox aria-label="Navigation">
+        <ListboxItem key="home" href="/home">Home</ListboxItem>
+        <ListboxItem key="about" href="/about">About</ListboxItem>
+      </Listbox>
+      <Dropdown>
+        <DropdownTrigger>
+          <Button>Open</Button>
+        </DropdownTrigger>
+        <DropdownMenu aria-label="Navigation">
+          <DropdownItem key="home" href="/home">Home</DropdownItem>
+          <DropdownItem key="about" href="/about">About</DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+      <Link href="/home">Home</Link>
+      <Link href="/about">About</Link>
+    </>
+  );
 }
